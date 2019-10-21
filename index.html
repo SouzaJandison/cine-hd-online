@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cine HD Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CSS Próprio-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#323232">
+        <a class="navbar-brand" href="index.html" style="color:#fff">Cine HD Online</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarMenu">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link active" style="color:#fff">Início</a>
+                <a href="filmes.html" class="nav-item nav-link" style="color:#fff">Filmes</a>
+                <a href="series.html" class="nav-item nav-link" style="color:#fff">Séries</a>
+                <a href="lista.html" class="nav-item nav-link" style="color:#fff">Minha Lista</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="assets/filmes/lancamento/mr-robot.html">
+                    <img src="assets/img/capa-lancamento/mr-robot.webp" class="d-block w-100" alt="...">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="assets/filmes/lancamento/supernatural.html">
+                    <img src="assets/img/capa-lancamento/supernatural.webp" class="d-block w-100" alt="...">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="assets/filmes/lancamento/john-wick-2.html">
+                    <img src="assets/img/capa-lancamento/john-wick-2.webp" class="d-block w-100" alt="...">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="assets/filmes/lancamento/captain-marvel.html">
+                    <img src="assets/img/capa-lancamento/capita-marvel.webp" class="d-block w-100" alt="...">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="assets/filmes/lancamento/class.html">
+                    <img src="assets/img/capa-lancamento/glass.webp" class="d-block w-100" alt="...">
+                </a>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        </div>
+        <!--lista de filmes-->
+        <div class="titulo-barra">
+            <div class="barinha"></div>
+            Filmes
+        </div>
+        <div class="barra-conteudo">
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="assets/filmes/lancamento/captain-marvel.html">
+                        <img src="assets/img/Filmes/capita-marvel.jpg" alt="" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="assets/filmes/lancamento/captain-marvel.html">Capitã Marvel</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="assets/filmes/lancamento/john-wick-2.html">
+                        <img src="assets/img/Filmes/jonn-wick-2.jpg" alt="" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="assets/filmes/lancamento/john-wick-2.html">John Wick 2</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="assets/filmes/lancamento/class.html">
+                        <img src="assets/img/Filmes/vidro.jpg" alt="" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="assets/filmes/lancamento/class.html">Vidro</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="assets/filmes/filmes/homem-aranha-longe-de-casa.html">
+                        <img src="assets/img/Filmes/homem-aranha-longe-de-casa.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="assets/filmes/filmes/homem-aranha-longe-de-casa.html">Homem-Aranha</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="">
+                        <img src="assets/img/Filmes/annabelle-3.png" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="">
+                        Annabelle 3
+                    </a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="assets/filmes/filmes/el-camino.html">
+                        <img src="assets/img/Filmes/el-camino.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="assets/filmes/filmes/el-camino.html">El Camino</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="">
+                        <img src="assets/img/Filmes/vingadores-ultimato.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="">Vingadores: Ultimato</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="">
+                        <img src="assets/img/Filmes/Coringa.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="">Coringa</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="">
+                        <img src="assets/img/Filmes/toy-story-4.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="">Toy Story 4</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="">
+                        <img src="assets/img/Filmes/o-rei-leão.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="">O Rei Leão</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="">
+                        <img src="assets/img/Filmes/aladdin.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="">Aladdin</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="">
+                        <img src="assets/img/Filmes/shazam.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="">Shazam</a>
+                </div>
+            </div>
+        </div>
+        <!--FIM! lista de filmes-->
+
+        <!--lista Series-->
+        <div class="titulo-barra">
+            <div class="barinha"></div>
+            Séries
+        </div>
+        <div class="barra-conteudo">
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="assets/filmes/lancamento/mr-robot.html">
+                        <img src="assets/img/Series/mr-robot.jpg" alt="" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="assets/filmes/lancamento/captain-marvel.html">MR. Robot</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="assets/filmes/lancamento/supernatural.html">
+                        <img src="assets/img/Series/supernatural.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="assets/filmes/lancamento/supernatural.html">Supernatural</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="">
+                        <img src="assets/img/Series/black-mirror.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="">Black Mirror</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="assets/filmes/series/chernobyl.html">
+                        <img src="assets/img/Series/chernobyl.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="assets/filmes/series/chernobyl.html">Chernobyl</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="">
+                        <img src="assets/img/Series/lucifer.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="">Lúcifer</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="">
+                        <img src="assets/img/Series/arrow.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="">Arrow</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="">
+                        <img src="assets/img/Series/the-big-bang-theory.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="">The Big Bang Theory</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="">
+                        <img src="assets/img/Series/flash.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="">Flash</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="">
+                        <img src="assets/img/Series/game-of-thrones.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="">Game of Thrones</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="">
+                        <img src="assets/img/Series/stranger-things.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="">Stranger Things</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="">
+                        <img src="assets/img/Series/orange-Is-the-new-black.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="">Orange Is the New Black</a>
+                </div>
+            </div>
+            <div class="quadros">
+                <div class="quadros-capa">
+                    <a href="">
+                        <img src="assets/img/Series/the-walking-dead.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="quadros-titulo">
+                    <a href="">The Walking Dead</a>
+                </div>
+            </div>
+        </div>
+        <!--FIM! lista Series-->
+        <!--
+            <div class="titulo-barra">
+                    <div class="barinha"></div>
+                    Animes
+                </div>
+                <div class="barra-conteudo">
+                        <div class="quadros">
+                            <div class="quadros-capa">
+                                <a href="assets/filmes/lancamento/captain-marvel.html">
+                                    <img src="assets/img/Filmes/capita-marvel.jpg" alt="" width="100%" height="100%">
+                                </a>
+                            </div>
+                            <div class="quadros-titulo">
+                                <a href="assets/filmes/lancamento/captain-marvel.html">Capitã Marvel</a>
+                            </div>
+                        </div>
+                        <div class="quadros">
+                            <div class="quadros-capa">
+                                
+                            </div>
+                            <div class="quadros-titulo">
+                                TÍTULO DO FILME
+                            </div>
+                        </div>
+                        <div class="quadros">
+                            <div class="quadros-capa">
+                                
+                            </div>
+                            <div class="quadros-titulo">
+                                TÍTULO DO FILME
+                            </div>
+                        </div>
+                        <div class="quadros">
+                            <div class="quadros-capa">
+                                
+                            </div>
+                            <div class="quadros-titulo">
+                                TÍTULO DO FILME
+                            </div>
+                        </div>
+                        <div class="quadros">
+                            <div class="quadros-capa">
+                                
+                            </div>
+                            <div class="quadros-titulo">
+                                TÍTULO DO FILME
+                            </div>
+                        </div>
+                        <div class="quadros">
+                            <div class="quadros-capa">
+                                
+                            </div>
+                            <div class="quadros-titulo">
+                                TÍTULO DO FILME
+                            </div>
+                        </div>
+                        <div class="quadros">
+                            <div class="quadros-capa">
+                                
+                            </div>
+                            <div class="quadros-titulo">
+                                TÍTULO DO FILME
+                            </div>
+                        </div>
+                        <div class="quadros">
+                            <div class="quadros-capa">
+                                
+                            </div>
+                            <div class="quadros-titulo">
+                                TÍTULO DO FILME
+                            </div>
+                        </div>
+                        <div class="quadros">
+                            <div class="quadros-capa">
+                                
+                            </div>
+                            <div class="quadros-titulo">
+                                TÍTULO DO FILME
+                            </div>
+                        </div>
+                        <div class="quadros">
+                            <div class="quadros-capa">
+                                
+                            </div>
+                            <div class="quadros-titulo">
+                                TÍTULO DO FILME
+                            </div>
+                        </div>
+                        <div class="quadros">
+                                <div class="quadros-capa">
+                                        
+                                </div>
+                                <div class="quadros-titulo">
+                                        TÍTULO DO FILME
+                                </div>
+                            </div>
+                            <div class="quadros">
+                                    <div class="quadros-capa">
+                                            
+                                    </div>
+                                    <div class="quadros-titulo">
+                                            TÍTULO DO FILME
+                                    </div>
+                                </div>
+                    </div>
+                    -->
+    <!---->
+    <footer>
+        <div class="footer">
+            &copy; Jandison Barbosa & Braian Santos
+        </div>
+    </footer>
+    <script src="assets/js/style.js"></script>
+    <!--Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

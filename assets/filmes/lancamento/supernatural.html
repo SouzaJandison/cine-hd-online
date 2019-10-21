@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Supernatural</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CSS Próprio-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/play.css">
+    <link rel="stylesheet" href="../../css/play-temporada.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#19242e">
+        <a class="navbar-brand" href="../../../index.html" style="color:#fff">Cine HD Online</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarMenu">
+            <div class="navbar-nav">
+                <a href="../../../index.html" class="nav-item nav-link active" style="color:#fff">Início</a>
+                <a href="../../../filmes.html" class="nav-item nav-link" style="color:#fff">Filmes</a>
+                <a href="../../../series.html" class="nav-item nav-link" style="color:#fff">Séries</a>
+                <a href="../../../lista.html" class="nav-item nav-link" style="color:#fff">Minha Lista</a>
+            </div>
+        </div>
+    </nav>
+    <div class="play-container">
+        <div class="play-capa-mobile">
+            <img src="../../img/Series/supernatural.jpg" alt="">
+        </div>
+        <div class="divisao-play-mobile">
+
+        </div>
+        <div class="play-info">
+            <div class="play-info-titulo">Supernatural</div>
+            <div class="play-info-subinfo">
+                <span>2005</span>
+                <span>15 Temporadas</span>
+                <div class="play-info-subinfo-classificacao">
+                    <span>+16 | Classificação local</span>
+                </div>
+                <img src="../../img/icon-subinfo.png" alt="">
+            </div>
+            <div class="play-info-play">
+                <div class="play-info-play-reproduzir" onclick="play()">
+                    <img src="../../img/play-button.png" alt="">
+                    <span>Reproduzir</span>
+                </div>
+                <div class="play-info-play-addlist" onclick="teste()">
+                    <span>Adicionar á sua Lista</span>
+                </div>
+            </div>
+            <div class="play-info-resumo">
+                <span>
+                    Desde que era pequeno, Sam Winchester (Jared Padalecki) tentava escapar do próprio
+                    passsado. Após a misteriosa morte de Mary (Samantha Smith), o pai de Sam passou 
+                    a procurar vingança contra as forças do mal que mataram a esposa, destruindo
+                    qualquer ser maligno que cruze o seu caminho. Ao contrário de Sam, Dean 
+                    (Jensen Ackles), irmão mais velho, sempre quis seguir os passos do pai. Sam 
+                    está determinado a se livrar do "negócio da família", mas sua vida está prestes 
+                    a tomar os rumos que ele não desejava, quando ele fica sem escolhas a não ser 
+                    unir-se ao irmão.
+                </span>
+            </div>
+        </div>
+        <div class="play-capa">
+            <img src="../../img/Series/supernatural.jpg">
+        </div>
+    </div>
+    <div id="play-series">
+        <div class="fecharPlay-series">
+            <img src="../../img/close.png" alt="" onclick="fecharPlay()">
+        </div>
+        <div class="menu-temp-ep">
+            <select name="" id="temporadas" onchange="mostraEP()">
+                <option value="1">1° Temporada</option>
+                <option value="1">2° Temporada</option>
+                <option value="1">3° Temporada</option>
+                <option value="1">4° Temporada</option>
+                <option value="1">5° Temporada</option>
+                <option value="1">6° Temporada</option>
+                <option value="1">7° Temporada</option>
+                <option value="1">8° Temporada</option>
+                <option value="1">9° Temporada</option>
+                <option value="1">10° Temporada</option>
+                <option value="1">11° Temporada</option>
+                <option value="1">12° Temporada</option>
+                <option value="1">13° Temporada</option>
+                <option value="1">14° Temporada</option>
+            </select>
+        </div>
+        <div id="episodios" >
+            <div class="ep">
+                S01E01
+            </div>
+            <div class="ep">
+                S01E02
+            </div>
+            <div class="ep">
+                S01E03
+            </div>
+            <div class="ep">
+                S01E04
+            </div>
+            <div class="ep">
+                S01E05
+            </div>
+            <div class="ep">
+                S01E06
+            </div>
+            <div class="ep">
+                S01E07
+            </div>
+            <div class="ep">
+                S01E08
+            </div>
+            <div class="ep">
+                S01E09
+            </div>
+            <div class="ep">
+                S01E10
+            </div>
+            <div class="ep">
+                S01E11
+            </div>
+            <div class="ep">
+                S01E12
+            </div>
+            <div class="ep">
+                S01E13
+            </div>
+            <div class="ep">
+                S01E14
+            </div>
+            <div class="ep">
+                S01E15
+            </div>
+            <div class="ep">
+                S01E16
+            </div>
+            <div class="ep">
+                S01E17
+            </div>
+            <div class="ep">
+                S01E18
+            </div>
+            <div class="ep">
+                S01E19
+            </div>
+            <div class="ep">
+                S01E20
+            </div>
+            <div class="ep">
+                S01E21
+            </div>
+            <div class="ep">
+                S01E22
+            </div>
+        </div>
+        <div id="reproduzi" style="background-color: #fff">
+
+        </div>
+    </div>
+<script>
+    function teste(){
+        alert("Funcionalidade sendo implementada!!!")
+    }
+    function play(){
+        var play = document.getElementById("play-series")
+        play.style.display = "block"
+    }
+    function fecharPlay(){
+        var play = document.getElementById("play-series")
+        play.style.display = "none"
+        var exitVideo = document.getElementById('reproduzi')
+        exitVideo.innerHTML = ''
+    }
+    function mostraEP(){
+        var temporadaSelTXT = document.getElementById('temporadas')
+        var temporadaSel = temporadaSelTXT.selectedIndex + 1
+
+        var episodio = document.getElementById('episodios')
+        if(temporadaSel == 1){
+            episodio.innerHTML ='<div class="ep">S01E01</div>' +
+                                '<div class="ep">S01E02</div>' +
+                                '<div class="ep">S01E03</div>' +
+                                '<div class="ep">S01E04</div>' +
+                                '<div class="ep">S01E05</div>' +
+                                '<div class="ep">S01E06</div>' +
+                                '<div class="ep">S01E07</div>' +
+                                '<div class="ep">S01E08</div>' +
+                                '<div class="ep">S01E09</div>' +
+                                '<div class="ep">S01E10</div>' +
+                                '<div class="ep">S01E11</div>' +
+                                '<div class="ep">S01E12</div>' +
+                                '<div class="ep">S01E13</div>' +
+                                '<div class="ep">S01E14</div>' +
+                                '<div class="ep">S01E15</div>' +
+                                '<div class="ep">S01E16</div>' +
+                                '<div class="ep">S01E17</div>' +
+                                '<div class="ep">S01E18</div>' +
+                                '<div class="ep">S01E19</div>' +
+                                '<div class="ep">S01E20</div>' +
+                                '<div class="ep">S01E21</div>' +
+                                '<div class="ep">S01E22</div>'
+        }else if(temporadaSel == 2){
+            episodio.innerHTML ='<div class="ep">S02E01</div>' +
+                                '<div class="ep">S02E02</div>' +
+                                '<div class="ep">S02E03</div>' +
+                                '<div class="ep">S02E04</div>' +
+                                '<div class="ep">S02E05</div>' +
+                                '<div class="ep">S02E06</div>' +
+                                '<div class="ep">S02E07</div>' +
+                                '<div class="ep">S02E08</div>' +
+                                '<div class="ep">S02E09</div>' +
+                                '<div class="ep">S02E10</div>' +
+                                '<div class="ep">S02E11</div>' +
+                                '<div class="ep">S02E12</div>' +
+                                '<div class="ep">S02E13</div>' +
+                                '<div class="ep">S02E14</div>' +
+                                '<div class="ep">S02E15</div>' +
+                                '<div class="ep">S02E16</div>' +
+                                '<div class="ep">S02E17</div>' +
+                                '<div class="ep">S02E18</div>' +
+                                '<div class="ep">S02E19</div>' +
+                                '<div class="ep">S02E20</div>' +
+                                '<div class="ep">S02E21</div>' +
+                                '<div class="ep">S02E22</div>'
+        }else if(temporadaSel == 3){
+            episodio.innerHTML ='<div class="ep">S03E01</div>' +
+                                '<div class="ep">S03E02</div>' +
+                                '<div class="ep">S03E03</div>' +
+                                '<div class="ep">S03E04</div>' +
+                                '<div class="ep">S03E05</div>' +
+                                '<div class="ep">S03E06</div>' +
+                                '<div class="ep">S03E07</div>' +
+                                '<div class="ep">S03E08</div>' +
+                                '<div class="ep">S03E09</div>' +
+                                '<div class="ep">S03E10</div>' +
+                                '<div class="ep">S03E11</div>' +
+                                '<div class="ep">S03E12</div>' +
+                                '<div class="ep">S03E13</div>' +
+                                '<div class="ep">S03E14</div>' +
+                                '<div class="ep">S03E15</div>' +
+                                '<div class="ep">S03E16</div>'
+        }else if(temporadaSel == 4){
+            episodio.innerHTML ='<div class="ep">S04E01</div>' +
+                                '<div class="ep">S04E02</div>' +
+                                '<div class="ep">S04E03</div>' +
+                                '<div class="ep">S04E04</div>' +
+                                '<div class="ep">S04E05</div>' +
+                                '<div class="ep">S04E06</div>' +
+                                '<div class="ep">S04E07</div>' +
+                                '<div class="ep">S04E08</div>' +
+                                '<div class="ep">S04E09</div>' +
+                                '<div class="ep">S04E10</div>' +
+                                '<div class="ep">S04E11</div>' +
+                                '<div class="ep">S04E12</div>' +
+                                '<div class="ep">S04E13</div>' +
+                                '<div class="ep">S04E14</div>' +
+                                '<div class="ep">S04E15</div>' +
+                                '<div class="ep">S04E16</div>' +
+                                '<div class="ep">S04E17</div>' +
+                                '<div class="ep">S04E18</div>' +
+                                '<div class="ep">S04E19</div>' +
+                                '<div class="ep">S04E20</div>' +
+                                '<div class="ep">S04E21</div>' +
+                                '<div class="ep">S04E22</div>'
+        }else if(temporadaSel == 5){
+            episodio.innerHTML ='<div class="ep">S05E01</div>' +
+                                '<div class="ep">S05E02</div>' +
+                                '<div class="ep">S05E03</div>' +
+                                '<div class="ep">S05E04</div>' +
+                                '<div class="ep">S05E05</div>' +
+                                '<div class="ep">S05E06</div>' +
+                                '<div class="ep">S05E07</div>' +
+                                '<div class="ep">S05E08</div>' +
+                                '<div class="ep">S05E09</div>' +
+                                '<div class="ep">S05E10</div>' +
+                                '<div class="ep">S05E11</div>' +
+                                '<div class="ep">S05E12</div>' +
+                                '<div class="ep">S05E13</div>' +
+                                '<div class="ep">S05E14</div>' +
+                                '<div class="ep">S05E15</div>' +
+                                '<div class="ep">S05E16</div>' +
+                                '<div class="ep">S05E17</div>' +
+                                '<div class="ep">S05E18</div>' +
+                                '<div class="ep">S05E19</div>' +
+                                '<div class="ep">S05E20</div>' +
+                                '<div class="ep">S05E21</div>' +
+                                '<div class="ep">S05E22</div>'
+        }
+        else if(temporadaSel == 6){
+            episodio.innerHTML ='<div class="ep">S06E01</div>' +
+                                '<div class="ep">S06E02</div>' +
+                                '<div class="ep">S06E03</div>' +
+                                '<div class="ep">S06E04</div>' +
+                                '<div class="ep">S06E05</div>' +
+                                '<div class="ep">S06E06</div>' +
+                                '<div class="ep">S06E07</div>' +
+                                '<div class="ep">S06E08</div>' +
+                                '<div class="ep">S06E09</div>' +
+                                '<div class="ep">S06E10</div>' +
+                                '<div class="ep">S06E11</div>' +
+                                '<div class="ep">S06E12</div>' +
+                                '<div class="ep">S06E13</div>' +
+                                '<div class="ep">S06E14</div>' +
+                                '<div class="ep">S06E15</div>' +
+                                '<div class="ep">S06E16</div>' +
+                                '<div class="ep">S06E17</div>' +
+                                '<div class="ep">S06E18</div>' +
+                                '<div class="ep">S06E19</div>' +
+                                '<div class="ep">S06E20</div>' +
+                                '<div class="ep">S06E21</div>' +
+                                '<div class="ep">S06E22</div>'
+        }
+        else if(temporadaSel == 7){
+            episodio.innerHTML ='<div class="ep">S07E01</div>' +
+                                '<div class="ep">S07E02</div>' +
+                                '<div class="ep">S07E03</div>' +
+                                '<div class="ep">S07E04</div>' +
+                                '<div class="ep">S07E05</div>' +
+                                '<div class="ep">S07E06</div>' +
+                                '<div class="ep">S07E07</div>' +
+                                '<div class="ep">S07E08</div>' +
+                                '<div class="ep">S07E09</div>' +
+                                '<div class="ep">S07E10</div>' +
+                                '<div class="ep">S07E11</div>' +
+                                '<div class="ep">S07E12</div>' +
+                                '<div class="ep">S07E13</div>' +
+                                '<div class="ep">S07E14</div>' +
+                                '<div class="ep">S07E15</div>' +
+                                '<div class="ep">S07E16</div>' +
+                                '<div class="ep">S07E17</div>' +
+                                '<div class="ep">S07E18</div>' +
+                                '<div class="ep">S07E19</div>' +
+                                '<div class="ep">S07E20</div>' +
+                                '<div class="ep">S07E21</div>' +
+                                '<div class="ep">S07E22</div>' +
+                                '<div class="ep">S07E23</div>'
+        }
+        else if(temporadaSel == 8){
+            episodio.innerHTML ='<div class="ep">S08E01</div>' +
+                                '<div class="ep">S08E02</div>' +
+                                '<div class="ep">S08E03</div>' +
+                                '<div class="ep">S08E04</div>' +
+                                '<div class="ep">S08E05</div>' +
+                                '<div class="ep">S08E06</div>' +
+                                '<div class="ep">S08E07</div>' +
+                                '<div class="ep">S08E08</div>' +
+                                '<div class="ep">S08E09</div>' +
+                                '<div class="ep">S08E10</div>' +
+                                '<div class="ep">S08E11</div>' +
+                                '<div class="ep">S08E12</div>' +
+                                '<div class="ep">S08E13</div>' +
+                                '<div class="ep">S08E14</div>' +
+                                '<div class="ep">S08E15</div>' +
+                                '<div class="ep">S08E16</div>' +
+                                '<div class="ep">S08E17</div>' +
+                                '<div class="ep">S08E18</div>' +
+                                '<div class="ep">S08E19</div>' +
+                                '<div class="ep">S08E20</div>' +
+                                '<div class="ep">S08E21</div>' +
+                                '<div class="ep">S08E22</div>' +
+                                '<div class="ep">S08E23</div>'
+        }
+        else if(temporadaSel == 9){
+            episodio.innerHTML ='<div class="ep">S09E01</div>' +
+                                '<div class="ep">S09E02</div>' +
+                                '<div class="ep">S09E03</div>' +
+                                '<div class="ep">S09E04</div>' +
+                                '<div class="ep">S09E05</div>' +
+                                '<div class="ep">S09E06</div>' +
+                                '<div class="ep">S09E07</div>' +
+                                '<div class="ep">S09E08</div>' +
+                                '<div class="ep">S09E09</div>' +
+                                '<div class="ep">S09E10</div>' +
+                                '<div class="ep">S09E11</div>' +
+                                '<div class="ep">S09E12</div>' +
+                                '<div class="ep">S09E13</div>' +
+                                '<div class="ep">S09E14</div>' +
+                                '<div class="ep">S09E15</div>' +
+                                '<div class="ep">S09E16</div>' +
+                                '<div class="ep">S09E17</div>' +
+                                '<div class="ep">S09E18</div>' +
+                                '<div class="ep">S09E19</div>' +
+                                '<div class="ep">S09E20</div>' +
+                                '<div class="ep">S09E21</div>' +
+                                '<div class="ep">S09E22</div>' +
+                                '<div class="ep">S09E23</div>'
+        }else if(temporadaSel == 10){
+            episodio.innerHTML ='<div class="ep">S10E01</div>' +
+                                '<div class="ep">S10E02</div>' +
+                                '<div class="ep">S10E03</div>' +
+                                '<div class="ep">S10E04</div>' +
+                                '<div class="ep">S10E05</div>' +
+                                '<div class="ep">S10E06</div>' +
+                                '<div class="ep">S10E07</div>' +
+                                '<div class="ep">S10E08</div>' +
+                                '<div class="ep">S10E09</div>' +
+                                '<div class="ep">S10E10</div>' +
+                                '<div class="ep">S10E11</div>' +
+                                '<div class="ep">S10E12</div>' +
+                                '<div class="ep">S10E13</div>' +
+                                '<div class="ep">S10E14</div>' +
+                                '<div class="ep">S10E15</div>' +
+                                '<div class="ep">S10E16</div>' +
+                                '<div class="ep">S10E17</div>' +
+                                '<div class="ep">S10E18</div>' +
+                                '<div class="ep">S10E19</div>' +
+                                '<div class="ep">S10E20</div>' +
+                                '<div class="ep">S10E21</div>' +
+                                '<div class="ep">S10E22</div>' +
+                                '<div class="ep">S10E23</div>'
+        }else if(temporadaSel == 11){
+            episodio.innerHTML ='<div class="ep">S11E01</div>' +
+                                '<div class="ep">S11E02</div>' +
+                                '<div class="ep">S11E03</div>' +
+                                '<div class="ep">S11E04</div>' +
+                                '<div class="ep">S11E05</div>' +
+                                '<div class="ep">S11E06</div>' +
+                                '<div class="ep">S11E07</div>' +
+                                '<div class="ep">S11E08</div>' +
+                                '<div class="ep">S11E09</div>' +
+                                '<div class="ep">S11E10</div>' +
+                                '<div class="ep">S11E11</div>' +
+                                '<div class="ep">S11E12</div>' +
+                                '<div class="ep">S11E13</div>' +
+                                '<div class="ep">S11E14</div>' +
+                                '<div class="ep">S11E15</div>' +
+                                '<div class="ep">S11E16</div>' +
+                                '<div class="ep">S11E17</div>' +
+                                '<div class="ep">S11E18</div>' +
+                                '<div class="ep">S11E19</div>' +
+                                '<div class="ep">S11E20</div>' +
+                                '<div class="ep">S11E21</div>' +
+                                '<div class="ep">S11E22</div>' +
+                                '<div class="ep">S11E23</div>'
+        }else if(temporadaSel == 12){
+            episodio.innerHTML ='<div class="ep">S12E01</div>' +
+                                '<div class="ep">S12E02</div>' +
+                                '<div class="ep">S12E03</div>' +
+                                '<div class="ep">S12E04</div>' +
+                                '<div class="ep">S12E05</div>' +
+                                '<div class="ep">S12E06</div>' +
+                                '<div class="ep">S12E07</div>' +
+                                '<div class="ep">S12E08</div>' +
+                                '<div class="ep">S12E09</div>' +
+                                '<div class="ep">S12E10</div>' +
+                                '<div class="ep">S12E11</div>' +
+                                '<div class="ep">S12E12</div>' +
+                                '<div class="ep">S12E13</div>' +
+                                '<div class="ep">S12E14</div>' +
+                                '<div class="ep">S12E15</div>' +
+                                '<div class="ep">S12E16</div>' +
+                                '<div class="ep">S12E17</div>' +
+                                '<div class="ep">S12E18</div>' +
+                                '<div class="ep">S12E19</div>' +
+                                '<div class="ep">S12E20</div>' +
+                                '<div class="ep">S12E21</div>' +
+                                '<div class="ep">S12E22</div>'
+        }else if(temporadaSel == 13){
+            episodio.innerHTML ='<div class="ep">S13E01</div>' +
+                                '<div class="ep">S13E02</div>' +
+                                '<div class="ep">S13E03</div>' +
+                                '<div class="ep">S13E04</div>' +
+                                '<div class="ep">S13E05</div>' +
+                                '<div class="ep">S13E06</div>' +
+                                '<div class="ep">S13E07</div>' +
+                                '<div class="ep">S13E08</div>' +
+                                '<div class="ep">S13E09</div>' +
+                                '<div class="ep">S13E10</div>' +
+                                '<div class="ep">S13E11</div>' +
+                                '<div class="ep">S13E12</div>' +
+                                '<div class="ep">S13E13</div>' +
+                                '<div class="ep">S13E14</div>' +
+                                '<div class="ep">S13E15</div>' +
+                                '<div class="ep">S13E16</div>' +
+                                '<div class="ep">S13E17</div>' +
+                                '<div class="ep">S13E18</div>' +
+                                '<div class="ep">S13E19</div>' +
+                                '<div class="ep">S13E20</div>' +
+                                '<div class="ep">S13E21</div>' +
+                                '<div class="ep">S13E22</div>' +
+                                '<div class="ep">S13E23</div>'
+        }else if(temporadaSel == 14){
+            episodio.innerHTML ='<div class="ep">S14E01</div>' +
+                                '<div class="ep">S14E02</div>' +
+                                '<div class="ep">S14E03</div>' +
+                                '<div class="ep">S14E04</div>' +
+                                '<div class="ep">S14E05</div>' +
+                                '<div class="ep">S14E06</div>' +
+                                '<div class="ep">S14E07</div>' +
+                                '<div class="ep">S14E08</div>' +
+                                '<div class="ep">S14E09</div>' +
+                                '<div class="ep">S14E10</div>' +
+                                '<div class="ep">S14E11</div>' +
+                                '<div class="ep">S14E12</div>' +
+                                '<div class="ep">S14E13</div>' +
+                                '<div class="ep">S14E14</div>' +
+                                '<div class="ep">S14E15</div>' +
+                                '<div class="ep">S14E16</div>' +
+                                '<div class="ep">S14E17</div>' +
+                                '<div class="ep">S14E18</div>' +
+                                '<div class="ep">S14E19</div>' +
+                                '<div class="ep">S14E20</div>'
+        }
+    }
+</script>
+<!--Bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

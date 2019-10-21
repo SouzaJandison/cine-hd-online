@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chernobyl</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CSS Próprio-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/play.css">
+    <link rel="stylesheet" href="../../css/play-temporada.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#19242e">
+        <a class="navbar-brand" href="../../../index.html" style="color:#fff">Cine HD Online</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarMenu">
+            <div class="navbar-nav">
+                <a href="../../../index.html" class="nav-item nav-link active" style="color:#fff">Início</a>
+                <a href="../../../filmes.html" class="nav-item nav-link" style="color:#fff">Filmes</a>
+                <a href="../../../series.html" class="nav-item nav-link" style="color:#fff">Séries</a>
+                <a href="../../../lista.html" class="nav-item nav-link" style="color:#fff">Minha Lista</a>
+            </div>
+        </div>
+    </nav>
+    <div class="play-container">
+        <div class="play-capa-mobile">
+            <img src="../../img/Series/chernobyl.jpg" alt="">
+        </div>
+        <div class="divisao-play-mobile">
+
+        </div>
+        <div class="play-info">
+            <div class="play-info-titulo">Chernobyl</div>
+            <div class="play-info-subinfo">
+                <span>2019</span>
+                <span>1 Temporadas</span>
+                <div class="play-info-subinfo-classificacao">
+                    <span>+16 | Classificação local</span>
+                </div>
+                <img src="../../img/icon-subinfo.png" alt="">
+            </div>
+            <div class="play-info-play">
+                <div class="play-info-play-reproduzir" onclick="play()">
+                    <img src="../../img/play-button.png" alt="">
+                    <span>Reproduzir</span>
+                </div>
+                <div class="play-info-play-addlist" onclick="teste()">
+                    <span>Adicionar á sua Lista</span>
+                </div>
+            </div>
+            <div class="play-info-resumo">
+                <span>
+                    Ucrânia, 1986. Uma explosão seguida de um incêndio na Usina Nuclear de Chernobyl 
+                    dizima dezenas de pessoas e acaba por se tornar o maior desastre nuclear da 
+                    história. Enquanto o mundo lamenta o ocorrido, o cientista Valery Legasov 
+                    (Jared Harris), a física Ulana Khomyuk (Emily Watson) e o vice-presidente 
+                    do Conselho de Ministros Boris Shcherbina (Stellan Skarsgård) tentam descobrir 
+                    as causas do acidente.
+                </span>
+            </div>
+        </div>
+        <div class="play-capa">
+            <img src="../../img/Series/chernobyl.jpg">
+        </div>
+    </div>
+    <div id="play-series">
+        <div class="fecharPlay-series">
+            <img src="../../img/close.png" alt="" onclick="fecharPlay()">
+        </div>
+        <div class="menu-temp-ep">
+            <select name="" id="temporadas" onchange="mostraEP()">
+                <option value="1">1° Temporada</option>
+            </select>
+        </div>
+        <div id="episodios" >
+            <div class="ep" style="width: 200px" onclick="reproduzirVideoS01E01()">
+                S01E01
+            </div>
+            <div class="ep" style="width: 200px" onclick="reproduzirVideoS01E02()">
+                S01E02
+            </div>
+            <div class="ep" style="width: 200px" onclick="reproduzirVideoS01E03()">
+                S01E03
+            </div>
+            <div class="ep" style="width: 200px" onclick="reproduzirVideoS01E04()">
+                S01E04
+            </div>
+            <div class="ep" style="width: 200px" onclick="reproduzirVideoS01E05()">
+                S01E05
+            </div>
+        </div>
+        <div id="reproduzi">
+            <iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!rGBzAYpI!Hul2qUcGH1VVZpVeVYIn9Y_rtDW27yWtIFIB02_oxFQ" allowfullscreen></iframe>
+        </div>
+    </div>
+<script>
+    function teste(){
+        alert("Funcionalidade sendo implementada!!!")
+    }
+    function play(){
+        var play = document.getElementById("play-series")
+        play.style.display = "block"
+    }
+    function fecharPlay(){
+        var play = document.getElementById("play-series")
+        play.style.display = "none"
+        var exitVideo = document.getElementById('reproduzi')
+        exitVideo.innerHTML = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!rGBzAYpI!Hul2qUcGH1VVZpVeVYIn9Y_rtDW27yWtIFIB02_oxFQ" allowfullscreen></iframe>'
+    }
+        var reprod = document.getElementById('reproduzi')
+        function reproduzirVideoS01E01(){
+            reprod.innerHTML = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!rGBzAYpI!Hul2qUcGH1VVZpVeVYIn9Y_rtDW27yWtIFIB02_oxFQ" allowfullscreen></iframe>'
+        }
+        function reproduzirVideoS01E02(){
+            reprod.innerHTML = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!8WZVRQoR!PpI4HJ28VZArcavn-0sABw6R7qD7uBOwk7SlRSP5yK0" allowfullscreen></iframe>'
+        }
+        function reproduzirVideoS01E03(){
+            reprod.innerHTML = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!IGRXhYqR!82x96ouTQSiUTq-SbeKFTnBTohCNtkBCZWWBEk4Wr1E" allowfullscreen></iframe>'
+        }
+        function reproduzirVideoS01E04(){
+            reprod.innerHTML = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!XZVSWQrI!ELEq1HJ2f6nDNoQfjnAa0eryCiQl91NvNfWQjlJAKYY" allowfullscreen></iframe>'
+        }
+        function reproduzirVideoS01E05(){
+            reprod.innerHTML = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!fqIE1aTC!XOh7j0CTyqAhRH8fMSHj5vTgma9X95DQx-QcmdWdV94" allowfullscreen></iframe>'
+        }
+</script>
+<!--Bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

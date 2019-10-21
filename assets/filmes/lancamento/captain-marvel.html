@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cine HD Online: Capitã Marvel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CSS Próprio-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/play.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#19242e">
+        <a class="navbar-brand" href="../../../index.html" style="color:#fff">Cine HD Online</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarMenu">
+            <div class="navbar-nav">
+                <a href="../../../index.html" class="nav-item nav-link active" style="color:#fff">Início</a>
+                <a href="../../../filmes.html" class="nav-item nav-link" style="color:#fff">Filmes</a>
+                <a href="../../../series.html" class="nav-item nav-link" style="color:#fff">Séries</a>
+                <a href="../../../lista.html" class="nav-item nav-link" style="color:#fff">Minha Lista</a>
+            </div>
+        </div>
+    </nav>
+    <div class="play-container">
+        <div class="play-capa-mobile">
+            <img src="../../img/Filmes/capita-marvel.jpg" alt="">
+        </div>
+        <div class="divisao-play-mobile">
+
+        </div>
+        <div class="play-info">
+            <div class="play-info-titulo">Capitã Marvel</div>
+            <div class="play-info-subinfo">
+                <span>2h 3min</span>
+                <span>2019</span>
+                <div class="play-info-subinfo-classificacao">
+                    <span>+13 | Classificação local</span>
+                </div>
+                <img src="../../img/icon-subinfo.png" alt="">
+            </div>
+            <div class="play-info-play">
+                <div class="play-info-play-reproduzir" onclick="play()">
+                    <img src="../../img/play-button.png" alt="">
+                    <span>Reproduzir</span>
+                </div>
+                <a href="https://youtu.be/av2jODMFu6M" target="_blank">
+                    <div class="play-info-play-trailer">
+                        <img src="../../img/play-button-trailer.png" alt="">
+                        <span>Assitir ao Trailer</span>
+                    </div>
+                </a>
+                <div class="play-info-play-addlist" onclick="teste()">
+                    <span>Adicionar á sua Lista</span>
+                </div>
+            </div>
+            <div class="play-info-resumo">
+                <span>
+                    Ambientado nos anos 1990, Capitã Marvel da Marvel Studios é 
+                    uma aventura totalmente nova de um período nunca visto na história 
+                    do Universo Cinematográfico da Marvel que acompanha a jornada de Carol 
+                    Danvers, conforme ela se torna uma das personagens mais poderosas do 
+                    universo. Enquanto uma guerra galáctica entre duas raças alienígenas 
+                    chega à Terra, Danvers se vê junto a um pequeno grupo de...
+                </span>
+            </div>
+        </div>
+        <div class="play-capa">
+            <img src="../../img/Filmes/capita-marvel.jpg" alt="">
+        </div>
+    </div>
+    <div id="play">
+        <div class="fecharPlay">
+            <img src="../../img/close.png" alt="" onclick="fecharPlay()">
+        </div>
+        <div id="fecharVideo">
+
+        </div>
+        
+    </div>
+<script>
+    function teste(){
+        alert("Funcionalidade sendo implementada!!!")
+    }
+    function play(){
+        var play = document.getElementById("play")
+        var video = document.getElementById('fecharVideo')
+        play.style.display = "block"
+        var Teste = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!nUVEXYRY!cmNA70iutInhybEAwEnVC3eZPZHyys681OUAfLLkLNo" allowfullscreen></iframe>'
+
+        video.innerHTML = Teste
+    }
+    function fecharPlay(){
+        var play = document.getElementById("play")
+        var video = document.getElementById('fecharVideo')
+
+        play.style.display = "none"
+        video.innerHTML = ""
+    }
+</script>
+<!--Bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

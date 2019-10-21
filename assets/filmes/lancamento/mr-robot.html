@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MR. Robot</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CSS Próprio-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/play.css">
+    <link rel="stylesheet" href="../../css/play-temporada.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#19242e">
+        <a class="navbar-brand" href="../../../index.html" style="color:#fff">Cine HD Online</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarMenu">
+            <div class="navbar-nav">
+                <a href="../../../index.html" class="nav-item nav-link active" style="color:#fff">Início</a>
+                <a href="../../../filmes.html" class="nav-item nav-link" style="color:#fff">Filmes</a>
+                <a href="../../../series.html" class="nav-item nav-link" style="color:#fff">Séries</a>
+                <a href="../../../lista.html" class="nav-item nav-link" style="color:#fff">Minha Lista</a>
+            </div>
+        </div>
+    </nav>
+    <div class="play-container">
+        <div class="play-capa-mobile">
+            <img src="../../img/Series/mr-robot.jpg" alt="">
+        </div>
+        <div class="divisao-play-mobile">
+
+        </div>
+        <div class="play-info">
+            <div class="play-info-titulo">MR. Robot</div>
+            <div class="play-info-subinfo">
+                <span>2015 - ...</span>
+                <span>4 Temporadas</span>
+                <div class="play-info-subinfo-classificacao">
+                    <span>+18 | Classificação local</span>
+                </div>
+                <img src="../../img/icon-subinfo.png" alt="">
+            </div>
+            <div class="play-info-play">
+                <div class="play-info-play-reproduzir" onclick="play()">
+                    <img src="../../img/play-button.png" alt="">
+                    <span>Reproduzir</span>
+                </div>
+                <div class="play-info-play-addlist" onclick="teste()">
+                    <span>Adicionar á sua Lista</span>
+                </div>
+            </div>
+            <div class="play-info-resumo">
+                <span>
+                    "Mr. Robot: Sociedade Hacker" é um suspense tecnológico que acompanha Elliot, 
+                    um jovem programador que trabalha como engenheiro de segurança cibernética durante 
+                    o dia e como hacker vigilante à noite. Elliot se vê em uma encruzilhada quando o líder 
+                    misterioso de um grupo hacker secreto o recruta para destruir a empresa que ele é pago 
+                    para proteger.
+                </span>
+            </div>
+        </div>
+        <div class="play-capa">
+            <img src="../../img/Series/mr-robot.jpg" alt="">
+        </div>
+    </div>
+    <div id="play-series">
+        <div class="fecharPlay-series">
+            <img src="../../img/close.png" alt="" onclick="fecharPlay()">
+        </div>
+        <div class="menu-temp-ep">
+            <select name="" id="temporadas" onchange="mostraEP()">
+                <option value="1">1° Temporada</option>
+                <option value="2">2° Temporada</option>
+                <option value="3">3° Temporada</option>
+            </select>
+        </div>
+        <div id="episodios">
+            <div class="ep" onclick="reproduzirVideoS01E01()">
+                S01E01
+            </div>
+            <div class="ep" onclick="reproduzirVideoS01E02()">
+                S01E02
+            </div>
+            <div class="ep" onclick="reproduzirVideoS01E03()">
+                S01E03
+            </div>
+            <div class="ep" onclick="reproduzirVideoS01E04()">
+                S01E04
+            </div>
+            <div class="ep" onclick="reproduzirVideoS01E05()">
+                S01E05
+            </div>
+            <div class="ep" onclick="reproduzirVideoS01E06()">
+                S01E06
+            </div>
+            <div class="ep" onclick="reproduzirVideoS01E07()">
+                S01E07
+            </div>
+            <div class="ep" onclick="reproduzirVideoS01E08()">
+                S01E08
+            </div>
+            <div class="ep" onclick="reproduzirVideoS01E09()">
+                S01E09
+            </div>
+            <div class="ep" onclick="reproduzirVideoS01E10()">
+                S01E10
+            </div>
+        </div>
+        <div id="reproduzi">
+            <iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!g0ASWRQQ!79tvkAPsOhpgmjiM7QUsvOZdo5SCsWbIQoyuyRM08vA" allowfullscreen></iframe>
+        </div>
+    </div>
+<script>
+    function teste(){
+        alert("Funcionalidade sendo implementada!!!")
+    }
+    function play(){
+        var play = document.getElementById("play-series")
+        play.style.display = "block"
+    }
+    function fecharPlay(){
+        var play = document.getElementById("play-series")
+        play.style.display = "none"
+        var exitVideo = document.getElementById('reproduzi')
+        exitVideo.innerHTML = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!g0ASWRQQ!79tvkAPsOhpgmjiM7QUsvOZdo5SCsWbIQoyuyRM08vA" allowfullscreen></iframe>'
+    }
+    function mostraEP(){
+        var temporadaSelTXT = document.getElementById('temporadas')
+        var temporadaSel = temporadaSelTXT.selectedIndex + 1
+
+        var episodio = document.getElementById('episodios')
+        if(temporadaSel == 1){
+            episodio.innerHTML = '<div class="ep" onclick="reproduzirVideoS01E01()">S01E01</div>' +
+                                '<div class="ep" onclick="reproduzirVideoS01E02()">S01E02</div>' +
+                                '<div class="ep" onclick="reproduzirVideoS01E03()">S01E03</div>' +
+                                '<div class="ep" onclick="reproduzirVideoS01E04()">S01E04</div>' +
+                                '<div class="ep" onclick="reproduzirVideoS01E05()">S01E05</div>' +
+                                '<div class="ep" onclick="reproduzirVideoS01E06()">S01E06</div>' +
+                                '<div class="ep" onclick="reproduzirVideoS01E07()">S01E07</div>' +
+                                '<div class="ep" onclick="reproduzirVideoS01E08()">S01E08</div>' +
+                                '<div class="ep" onclick="reproduzirVideoS01E09()">S01E09</div>' +
+                                '<div class="ep" onclick="reproduzirVideoS01E10()">S01E10</div>'
+        }else if(temporadaSel == 2){
+            episodio.innerHTML = '<div class="ep">S02E01</div>' +
+                                '<div class="ep">S02E02</div>' +
+                                '<div class="ep">S02E03</div>' +
+                                '<div class="ep">S02E04</div>' +
+                                '<div class="ep">S02E05</div>' +
+                                '<div class="ep">S02E06</div>' +
+                                '<div class="ep">S02E07</div>' +
+                                '<div class="ep">S02E08</div>' +
+                                '<div class="ep">S02E09</div>' +
+                                '<div class="ep">S02E10</div>' +
+                                '<div class="ep">S02E11</div>' +
+                                '<div class="ep">S02E12</div>'
+        }else if(temporadaSel == 3){
+            episodio.innerHTML = '<div class="ep">S03E01</div>' +
+                                '<div class="ep">S03E02</div>' +
+                                '<div class="ep">S03E03</div>' +
+                                '<div class="ep">S03E04</div>' +
+                                '<div class="ep">S03E05</div>' +
+                                '<div class="ep">S03E06</div>' +
+                                '<div class="ep">S03E07</div>' +
+                                '<div class="ep">S03E08</div>' +
+                                '<div class="ep">S03E09</div>' +
+                                '<div class="ep">S03E10</div>'
+        }
+    }
+    var reprod = document.getElementById('reproduzi')
+    function reproduzirVideoS01E01(){
+        reprod.innerHTML = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!g0ASWRQQ!79tvkAPsOhpgmjiM7QUsvOZdo5SCsWbIQoyuyRM08vA" allowfullscreen></iframe>'
+    }
+    function reproduzirVideoS01E02(){
+        reprod.innerHTML = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!phBWAYpI!Vjn3vS2Q0iDLlqoS0A7dlTpt4kxG8NHXXlL5uaHabh0" allowfullscreen></iframe>'
+    }
+    function reproduzirVideoS01E03(){
+        reprod.innerHTML = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!NlhFTDCL!3YZysmy6mP4puZuNQqRPKxVK_XpbunI6fMkxzWBbhzE" allowfullscreen></iframe>'
+    }
+    function reproduzirVideoS01E04(){
+        reprod.innerHTML = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!EwoXVLAL!nyzioDxkVmMVNbyPR43L-a2o-RUx21jOmDG8daykEWA" allowfullscreen></iframe>'
+    }
+    function reproduzirVideoS01E05(){
+        reprod.innerHTML = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!JhxGhB5L!j_mAFjKwUxyTRkRr4PZM8XxDy9ACRhrA77SYLzpXUEE" allowfullscreen></iframe>'
+    }
+    //
+    var reprod = document.getElementById('reproduzi')
+    function reproduzirVideoS01E06(){
+        reprod.innerHTML = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!cpBmAYAY!i94nwaleriTydO76v1RcVnL6aiQRuSKLDfo7y2Qz3LQ" allowfullscreen></iframe>'
+    }
+    function reproduzirVideoS01E07(){
+        reprod.innerHTML = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!R4B3nTDb!yZLw1M7iFmaRPvwayoNrBRwIZX6Dj7hAg8h5COQlot0" allowfullscreen></iframe>'
+    }
+    function reproduzirVideoS01E08(){
+        reprod.innerHTML = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!4xI1RIAb!ukmhSLc6lMRI9WSk-1aIonBDtgKVqFXFfa40o-y71pY" allowfullscreen></iframe>'
+    }
+    function reproduzirVideoS01E09(){
+        reprod.innerHTML = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!EgQEjDqK!mPcdeDjovKaSTQO0sgbfja2-OTlMVugKTc06qub8A8I" allowfullscreen></iframe>'
+    }
+    function reproduzirVideoS01E10(){
+        reprod.innerHTML = '<iframe width="100%" height="100%" frameborder="0" src="https://mega.nz/embed#!dxIVUYDb!De8xOwbW8C_ZTkfxKmAvRN0zGr3GwDjkI9ozGZKnnzg" allowfullscreen></iframe>'
+    } 
+</script>
+<!--Bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

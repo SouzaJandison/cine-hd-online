@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+#play-series{
+    width: 98%;
+    height: 650px;
+    margin-left: 1%;
+    position: fixed;
+    top: 0;
+    display: none;
+    background-color: #000;
+}
+.menu-temp-ep{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: aqua;
+}
+#temporadas{
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+#episodios{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 10px;
+}
+.ep{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.fecharPlay-series{
+    margin-top: 20px;
+    margin-left: 40px;
+    float: left;
+}
+.fecharPlay-series img{
+    cursor: pointer;
+}
+#reproduzi{
+    width: 70%;
+    height: 400px;
+    margin-left: 15%;
+    margin-top: 20px;
+    float: left;
+}
